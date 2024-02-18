@@ -24,8 +24,24 @@
 *.booproj
 *.svd
 
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
 # Ignore Visual Studio configuration files
 .vsconfig
+
+
+# Visual Studio cache directory
+.vs/
+
+# VSCode cache directory
+.vscode/
+
+# IDEA Rider cache directory
+.idea/
 
 # OS generated files #
 .DS_Store*
@@ -47,7 +63,7 @@ sysinfo.txt
 .vsconfig
 
 
-# Mac OS X 特有的文件
+# Mac OS X
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -56,8 +72,14 @@ sysinfo.txt
 *.bat
 *.cmd
 
-# Visual Studio Code 项目设置和工作区文件
+# Visual Studio Code
 .vscode/
 
-# 日志文件
+# Journal
 *.log
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
