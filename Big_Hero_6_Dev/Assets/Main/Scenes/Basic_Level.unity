@@ -281,7 +281,7 @@ Transform:
   m_GameObject: {fileID: 266961142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.03, y: -3.509, z: 0}
+  m_LocalPosition: {x: -7.96, y: -3.509, z: 0}
   m_LocalScale: {x: 0.7028471, y: 0.7726571, z: 0.4654}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -338,8 +338,6 @@ MonoBehaviour:
   scene2: {fileID: 0}
   disableKey: 102
   climbSpeed: 5
-  Win_UIObject: {fileID: 0}
-  Ins_UIObject: {fileID: 0}
 --- !u!114 &266961148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,8 +557,8 @@ Transform:
   m_GameObject: {fileID: 509885037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.45, y: -4.02, z: -0.042588662}
-  m_LocalScale: {x: 10.260619, y: 0.13291135, z: 1}
+  m_LocalPosition: {x: -3.47, y: -4.02, z: -0.042588662}
+  m_LocalScale: {x: 12.825774, y: 0.13291135, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 381665269}
@@ -942,7 +940,7 @@ GameObject:
   - component: {fileID: 610999536}
   m_Layer: 3
   m_Name: Floor4
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1238,7 @@ GameObject:
   - component: {fileID: 749522606}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,7 +1252,7 @@ Transform:
   m_GameObject: {fileID: 749522603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6781, y: -3.143, z: -0.042588662}
+  m_LocalPosition: {x: 2.8781, y: -3.143, z: -0.042588662}
   m_LocalScale: {x: 0.12248043, y: -1.891019, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1675,7 +1673,7 @@ GameObject:
   - component: {fileID: 1329616782}
   m_Layer: 3
   m_Name: Floor3
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1689,7 +1687,7 @@ Transform:
   m_GameObject: {fileID: 1329616779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.68, y: -0.54, z: -0.042588662}
+  m_LocalPosition: {x: 2.97, y: -0.54, z: -0.042588662}
   m_LocalScale: {x: 1.8016869, y: -0.11185336, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1806,7 +1804,7 @@ GameObject:
   - component: {fileID: 1356610605}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1820,7 +1818,7 @@ Transform:
   m_GameObject: {fileID: 1356610601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6122, y: -1.4901, z: -0.042588662}
+  m_LocalPosition: {x: -2.4122, y: -1.4901, z: -0.042588662}
   m_LocalScale: {x: 0.106900916, y: -1.7507055, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2240,7 +2238,7 @@ GameObject:
   - component: {fileID: 1637689533}
   m_Layer: 3
   m_Name: Floor1
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2254,7 +2252,7 @@ Transform:
   m_GameObject: {fileID: 1637689530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98, y: -2.27, z: -0.042588662}
+  m_LocalPosition: {x: 0.22, y: -2.27, z: -0.042588662}
   m_LocalScale: {x: 5.38782, y: -0.14844507, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2385,7 +2383,7 @@ Transform:
   m_GameObject: {fileID: 1739967478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: -3.27, z: -0.042588662}
+  m_LocalPosition: {x: 2.23, y: -3.27, z: -0.042588662}
   m_LocalScale: {x: 0.1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2727,7 +2725,7 @@ GameObject:
   - component: {fileID: 1891760383}
   m_Layer: 3
   m_Name: Floor2
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2741,7 +2739,7 @@ Transform:
   m_GameObject: {fileID: 1891760380}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.73, y: -1.87, z: -0.042588662}
+  m_LocalPosition: {x: 5.46, y: -1.87, z: -0.042588662}
   m_LocalScale: {x: 1.8017623, y: 0.10769592, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

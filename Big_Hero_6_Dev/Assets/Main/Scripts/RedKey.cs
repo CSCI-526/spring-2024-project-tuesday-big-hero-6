@@ -10,12 +10,19 @@ public class RedKey : MonoBehaviour
         {
             Global.redKey = true;
 
-            GameObject floor = GameObject.FindGameObjectWithTag("Floor");
-            if (floor != null)
+            GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
+
+
+            foreach(GameObject floor in floors)
             {
-                Destroy(floor);
-                Debug.Log("Floor has been destroyed!");
+                if (floor != null)
+                {
+                    Destroy(floor);
+                    Debug.Log("Floor has been destroyed!");
+                }
+
             }
+
 
             Destroy(gameObject);
             Debug.Log("Red key has been collected!");

@@ -7,7 +7,7 @@ public class DevPlayerMovement : MonoBehaviour
 {
 
     private float horizontal;
-    private float speed = 8f;
+    private float speed = 6f;
     private float jumpingPower = 13f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
