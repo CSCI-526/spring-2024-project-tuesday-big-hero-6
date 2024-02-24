@@ -25,13 +25,13 @@ public class DevPlayerMovement : MonoBehaviour
     public float climbSpeed = 5f; // Climbing Speed
     
     private bool isClimbing = false; // Check is on climbing
-    public GameObject Win_UIObject;
-    public GameObject Ins_UIObject;
+    // public GameObject Win_UIObject;
+    // public GameObject Ins_UIObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        Win_UIObject.SetActive(false);
+        // Win_UIObject.SetActive(false);
 
     }
 
@@ -105,8 +105,8 @@ public class DevPlayerMovement : MonoBehaviour
         if(collision.gameObject.name == "Door")
         {
             Debug.Log("You touched the door");
-            Win_UIObject.SetActive(true);
-            Ins_UIObject.SetActive(false);
+            // Win_UIObject.SetActive(true);
+            // Ins_UIObject.SetActive(false);
             Time.timeScale = 0;
         }
         if (collision.tag == "Climbable") // tag is "Climbable"
