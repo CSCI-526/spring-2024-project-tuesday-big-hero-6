@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 public class DevPlayerMovement : MonoBehaviour
 {
+    public Transform final;
+    public float tolerance = 1f;
 
     private float horizontal;
     private float speed = 6f;
@@ -129,16 +131,36 @@ public class DevPlayerMovement : MonoBehaviour
 
     void CheckIfLevelCompleted()
     {
-
-        if (Mathf.Abs(transform.position.x - 4.8f) < 0.1f && transform.position.y > 3.2f)
+        if (final.gameObject.tag == "Player")
         {
-            if (Global.yellowKey && Global.redKey)
-            {
-                Debug.Log("Success！");
-                Time.timeScale = 0;
-                winGameText.enabled = true;
-                winGameObject.SetActive(true);
-            }
+            Debug.Log("物体开始重叠");
+            winGameObject.SetActive(true);
         }
+
+        // 检查X轴对齐
+        bool isXAligned = Mathf.Abs(gameObject.transform.position.x - final.position.x) < tolerance;
+
+        // 检查Y轴对齐
+        bool isYAligned = Mathf.Abs(gameObject.transform.position.y - final.position.y) < tolerance;
+
+        if (isXAligned && isYAligned)
+        {
+            Debug.Log("Success！");
+            Time.timeScale = 0;
+            winGameText.enabled = true;
+            winGameObject.SetActive(true);
+        }
+
+
+        //if (Mathf.Abs(transform.position.x - 4.8f) < 0.1f && transform.position.y > 3.2f)
+        //{
+        //    if (Global.yellowKey && Global.redKey)
+        //    {
+        //        Debug.Log("Success！");
+        //        Time.timeScale = 0;
+        //        winGameText.enabled = true;
+        //        winGameObject.SetActive(true);
+        //    }
+        //}
     }
 }
