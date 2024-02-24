@@ -1,0 +1,70 @@
+# macOS 文件系统文件
+.DS_Store
+
+# IntelliJ IDEA / WebStorm / PyCharm / etc.
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Windows 文件系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Windows Image Preview
+$RECYCLE.BIN/
+
+# Windows 短名称
+*.~*
+
+# Windows Installer 文件
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows 日志文件
+*.log
+
+# Windows 脚本文件
+*.bat
+*.cmd
+
+# Node.js 依赖目录
+node_modules/
+
+# 构建输出目录
+/dist
+/build
+/logs
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+*.t
+
+# 包管理器锁文件
+package-lock.json
+yarn.lock
+
+# Python 字节码文件
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境目录
+.venv
+env/
+venv/
+
+# Gradle / Maven
+.gradle/
+build/
+/target/
+
+# 日志和数据文件
+*.log
+*.sql
+*.sqlite
