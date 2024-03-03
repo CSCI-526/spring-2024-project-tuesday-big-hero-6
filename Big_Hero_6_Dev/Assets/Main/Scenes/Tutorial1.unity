@@ -276,7 +276,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.15566039, b: 0.15566039, a: 1}
+  m_Color: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -343,6 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   final: {fileID: 618085935}
   tolerance: 0.01
+  Shadowing: {fileID: 0}
+  speed: 6
   rb: {fileID: 266961146}
   groundCheck: {fileID: 322548500}
   groundLayer:
@@ -350,9 +352,6 @@ MonoBehaviour:
     m_Bits: 8
   winGameText: {fileID: 873548383}
   winGameObject: {fileID: 873548381}
-  scene1: {fileID: 0}
-  scene2: {fileID: 0}
-  disableKey: 102
   climbSpeed: 5
 --- !u!114 &266961148
 MonoBehaviour:
@@ -367,7 +366,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shadowPrefab: {fileID: 770413860}
-  shadowDelay: 3
+  shadowInstance: {fileID: 0}
+  shadowDelay: 0.5
+  gelFlag: 0
 --- !u!114 &266961149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +932,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.15566039, b: 0.15566039, a: 0.31764707}
+  m_Color: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 0.35686275}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
