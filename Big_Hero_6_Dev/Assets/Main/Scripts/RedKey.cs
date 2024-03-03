@@ -11,7 +11,8 @@ public class RedKey : MonoBehaviour
             Global.redKey = true;
 
             GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
-
+            GameObject[] gels = GameObject.FindGameObjectsWithTag("TimeGel");
+            GameObject[] keys = GameObject.FindGameObjectsWithTag("Key");
 
             foreach(GameObject floor in floors)
             {
@@ -19,6 +20,25 @@ public class RedKey : MonoBehaviour
                 {
                     Destroy(floor);
                     Debug.Log("Floor has been destroyed!");
+                }
+
+            }
+            foreach(GameObject gel in gels)
+            {
+                if (gel != null)
+                {
+                    Destroy(gel);
+                    Debug.Log("Gel has been destroyed!");
+                }
+
+            }
+            
+            foreach(GameObject key in keys)
+            {
+                if (key != null)
+                {
+                    Destroy(key);
+                    Debug.Log("Key has been destroyed!");
                 }
 
             }

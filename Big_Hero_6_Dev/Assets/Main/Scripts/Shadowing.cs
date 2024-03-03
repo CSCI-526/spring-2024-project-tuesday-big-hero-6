@@ -5,12 +5,14 @@ using UnityEngine;
 public class Shadowing : MonoBehaviour
 {
     public GameObject shadowPrefab; // Shadow Prefab
-    private GameObject shadowInstance; // Shadow Instance
+    public GameObject shadowInstance; // Shadow Instance
     private List<Vector3> positionList = new List<Vector3>(); // Shadow Position List
-    public float shadowDelay = 3f; // Shadow Lag Time
+    public float shadowDelay = 1f; // Shadow Lag Time
     private float timer = 0f; // TImer
     private float recordInterval = 0.01f; // Position Inverval
-
+    private int Renderindex;
+    private int Moveindex;
+    public int gelFlag = 0;
     void Start()
     {
         shadowInstance = Instantiate(shadowPrefab, transform.position, Quaternion.identity);
@@ -39,10 +41,22 @@ public class Shadowing : MonoBehaviour
 
     void RenderShadow()
     {
-        if (positionList.Count > shadowDelay / recordInterval)
+        if (gelFlag == 0)
         {
-            int index = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(shadowDelay / recordInterval)); // Reder shadow's position
-            shadowInstance.transform.position = positionList[index];
+            if (positionList.Count > shadowDelay / recordInterval)
+            {
+                Renderindex = Mathf.Max(0,positionList.Count - Mathf.FloorToInt(shadowDelay / recordInterval)); // Reder shadow's position
+                shadowInstance.transform.position = positionList[Renderindex];
+            }
+        }
+        else
+        {
+            int index = 1;
+            if (positionList.Count > shadowDelay / recordInterval)
+            {
+                Renderindex = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(index / recordInterval)); // Reder shadow's position
+                shadowInstance.transform.position = positionList[Renderindex];
+            }
         }
     }
 
@@ -50,9 +64,9 @@ public class Shadowing : MonoBehaviour
     {
         if (positionList.Count > shadowDelay / recordInterval)
         {
-            int index = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(shadowDelay / recordInterval)); //Get shadow's position
-            transform.position = positionList[index];
-            
+            //Moveindex = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(shadowDelay / recordInterval)); //Get shadow's position
+            //transform.position = positionList[Moveindex];
+            transform.position = shadowInstance.transform.position;
             positionList.Clear(); // Clear old shadow's position
             
             positionList.Add(transform.position); // Restart the shddow

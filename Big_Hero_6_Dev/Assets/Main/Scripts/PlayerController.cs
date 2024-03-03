@@ -7,9 +7,9 @@ public class DevPlayerMovement : MonoBehaviour
 {
     public Transform final;
     public float tolerance = 1f;
-
+    public Shadowing Shadowing;
     private float horizontal;
-    private float speed = 6f;
+    public float speed = 6f;
     private float jumpingPower = 13f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -17,12 +17,12 @@ public class DevPlayerMovement : MonoBehaviour
     public TextMeshProUGUI winGameText;
     public GameObject winGameObject;
     
-    public GameObject scene1;
-    public GameObject scene2;
+    //public GameObject scene1;
+    //public GameObject scene2;
     private bool switchFlag = false;
     private bool keyPressed = false;
     
-    public KeyCode disableKey = KeyCode.F;
+    private KeyCode disableKey = KeyCode.F;
     
     public float climbSpeed = 5f; // Climbing Speed
     
@@ -74,14 +74,14 @@ public class DevPlayerMovement : MonoBehaviour
             // According to switchFlag to switch scenes
             if (!switchFlag)
             {
-                scene1.SetActive(false);
-                scene2.SetActive(true);
+                //scene1.SetActive(false);
+                //scene2.SetActive(true);
                 switchFlag = true;
             }
             else
             {
-                scene1.SetActive(true);
-                scene2.SetActive(false);
+                //scene1.SetActive(true);
+                //scene2.SetActive(false);
                 switchFlag = false;
             }
 
@@ -117,6 +117,13 @@ public class DevPlayerMovement : MonoBehaviour
             isClimbing = true;
             rb.gravityScale = 0; // disable the graviry
         }
+        
+        
+        if (collision.tag == "TimeGel")
+        {
+            Debug.Log("Hit Gel");
+            Shadowing.gelFlag = 1;
+        }
     }
     
 
@@ -127,6 +134,14 @@ public class DevPlayerMovement : MonoBehaviour
             isClimbing = false;
             rb.gravityScale = 4; // restore the gravity
         }
+
+        
+        if (other.tag == "TimeGel")
+        {
+            Debug.Log("Leave Gel");
+            Shadowing.gelFlag = 0;
+        }
+        
     }
 
     //void CheckIfLevelCompleted()

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - TimeGel
+  - TimeBarrier
+  - Key
   layers:
   - Default
   - TransparentFX

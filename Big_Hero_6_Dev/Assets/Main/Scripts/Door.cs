@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     {
         if (Global.yellowKey && !hasMoved)
         {
-            StartCoroutine(MoveDoorDown(1.6f));
+            StartCoroutine(MoveDoorDown(2.8f));
             hasMoved = true;
         }
     }
@@ -18,7 +18,7 @@ public class Door : MonoBehaviour
     IEnumerator MoveDoorDown(float distance)
     {
         Vector3 targetPosition = transform.position + new Vector3(0, -distance, 0);
-        float timeToMove = 1.0f;
+        float timeToMove = 0.5f;
         float elapsedTime = 0;
         Vector3 startPosition = transform.position;
 
