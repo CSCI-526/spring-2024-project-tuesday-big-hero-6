@@ -14,6 +14,7 @@ public class LoseGame : MonoBehaviour
         {
             Time.timeScale = 0;
             loseGameObject.SetActive(true);
+
         }
     }
 }
