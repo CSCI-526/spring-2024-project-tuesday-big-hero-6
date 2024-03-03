@@ -13,6 +13,7 @@ public class Shadowing : MonoBehaviour
     private int Renderindex;
     private int Moveindex;
     public int gelFlag = 0;
+    public float shadowIndex = 1.2f;
     void Start()
     {
         shadowInstance = Instantiate(shadowPrefab, transform.position, Quaternion.identity);
@@ -51,10 +52,9 @@ public class Shadowing : MonoBehaviour
         }
         else
         {
-            int index = 1;
             if (positionList.Count > shadowDelay / recordInterval)
             {
-                Renderindex = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(index / recordInterval)); // Reder shadow's position
+                Renderindex = Mathf.Max(0, positionList.Count - Mathf.FloorToInt(shadowIndex / recordInterval)); // Reder shadow's position
                 shadowInstance.transform.position = positionList[Renderindex];
             }
         }
