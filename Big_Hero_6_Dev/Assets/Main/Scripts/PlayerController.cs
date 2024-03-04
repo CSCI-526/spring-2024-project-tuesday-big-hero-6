@@ -34,7 +34,7 @@ public class DevPlayerMovement : MonoBehaviour
     void Start()
     {
         // Win_UIObject.SetActive(false);
-
+        Time.timeScale = 1;
     }
 
     void Update() 
