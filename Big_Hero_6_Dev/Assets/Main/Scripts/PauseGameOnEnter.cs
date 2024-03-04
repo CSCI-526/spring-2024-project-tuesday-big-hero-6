@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class PauseGameOnEnter : MonoBehaviour
 {
     public GameObject winGameObject;
+	public LevelAnalyticsManager levelAnalyticsManager;
 
 	void Start()
     {
@@ -14,7 +15,8 @@ public class PauseGameOnEnter : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && Global.yellowKey && Global.redKey)
         {
-            Debug.Log("Game Over. You Suscceed!");
+			levelAnalyticsManager.EndLevel();
+            Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
             winGameObject.SetActive(true);
         }

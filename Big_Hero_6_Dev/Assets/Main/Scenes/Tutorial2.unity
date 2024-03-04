@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winGameObject: {fileID: 873548381}
+  levelAnalyticsManager: {fileID: 0}
 --- !u!61 &618085938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2763,8 +2764,7 @@ MonoBehaviour:
 
     J to Reverse the Time!
 
-    R the page
-    to Restart
+    R to Restart
 
 '
   m_isRightToLeft: 0

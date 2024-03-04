@@ -13,7 +13,7 @@ public class PauseGameOnEnter_Tutorial : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Game Over. You Suscceed!");
+            Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
             winGameObject.SetActive(true);
         }
