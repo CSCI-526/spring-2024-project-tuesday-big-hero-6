@@ -649,8 +649,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  winGameText: {fileID: 0}
-  winGameObject: {fileID: 0}
+  winGameText: {fileID: 873548383}
+  winGameObject: {fileID: 873548381}
   climbSpeed: 5
 --- !u!114 &266961148
 MonoBehaviour:
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e10a0e64f5914a039786b45fdddf97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winGameObject: {fileID: 0}
+  winGameObject: {fileID: 873548381}
 --- !u!61 &618085938
 BoxCollider2D:
   m_ObjectHideFlags: 0
