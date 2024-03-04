@@ -2272,7 +2272,7 @@ PrefabInstance:
 
         Space to Jump
 
-        Refresh the page to Restart
+        R to Restart
 
 '
       objectReference: {fileID: 0}

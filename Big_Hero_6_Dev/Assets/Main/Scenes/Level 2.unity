@@ -3221,6 +3221,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2942757304018012185, guid: 903abfba008906d45ab04dc1098cd057, type: 3}
+      propertyPath: m_text
+      value: 'WD to Move
+
+        Space to Jump
+
+        J to Reverse the Time!
+
+        R
+        the page to Restart
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3544298366394395209, guid: 903abfba008906d45ab04dc1098cd057, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
