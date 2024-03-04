@@ -13,9 +13,12 @@ public class PauseGameOnEnter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         if (other.gameObject.CompareTag("Player") && Global.yellowKey && Global.redKey)
         {
-			levelAnalyticsManager.EndLevel();
+            if(currentScene.name !="Tutorial1" && currentScene.name != "Tutorial2"){
+                levelAnalyticsManager.EndLevel();
+            }
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
             winGameObject.SetActive(true);
