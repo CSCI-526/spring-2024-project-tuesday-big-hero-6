@@ -846,8 +846,8 @@ GameObject:
   m_Component:
   - component: {fileID: 618085935}
   - component: {fileID: 618085936}
-  - component: {fileID: 618085937}
   - component: {fileID: 618085938}
+  - component: {fileID: 618085939}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -922,20 +922,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &618085937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618085934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e10a0e64f5914a039786b45fdddf97e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winGameObject: {fileID: 873548381}
-  levelAnalyticsManager: {fileID: 0}
 --- !u!61 &618085938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -981,6 +967,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &618085939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618085934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5f0c83ca1a6414b87560ab40e7fbff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winGameObject: {fileID: 873548381}
 --- !u!114 &676697274 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5441577324565316557, guid: 092f652a19a92f543a0fe5e73be5d858, type: 3}
