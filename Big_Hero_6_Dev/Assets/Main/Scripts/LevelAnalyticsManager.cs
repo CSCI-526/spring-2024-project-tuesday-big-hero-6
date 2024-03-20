@@ -5,6 +5,17 @@ using System.Collections.Generic;
 using Unity.Services.Core;
 using Unity.Services.Analytics;
 using System.Text.RegularExpressions;
+using Proyecto26;
+using System;
+
+[System.Serializable]
+public class FinishLevelTime
+{
+    public string level;
+    public string eventName;
+    public double time;
+    public long timeStamp;
+}
 public class LevelAnalyticsManager : MonoBehaviour
 {
     private float levelStartTime;
@@ -27,6 +38,15 @@ public class LevelAnalyticsManager : MonoBehaviour
         Debug.Log("Start Time: " + levelStartTime);
     }
 
+    public long GetTimeStamp()
+    {
+        DateTime now = DateTime.UtcNow;
+        DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        TimeSpan timeSpan = now - epoch;
+        long timestampSeconds = (long)timeSpan.TotalSeconds;
+        return timestampSeconds;
+    }
+
     public void EndLevel()
     {
         // Level End
@@ -37,23 +57,37 @@ public class LevelAnalyticsManager : MonoBehaviour
         Debug.Log(levelIndex);
         if (levelIndex == "1")
         {
-            CustomEvent FinishLevel1 = new CustomEvent(levelTimeEvent)
+            FinishLevelTime finishLevelTime = new FinishLevelTime();
+            finishLevelTime.level = "Level1";
+            finishLevelTime.eventName = "Level1_FinishTime";
+            finishLevelTime.time = timeToComplete;
+            finishLevelTime.timeStamp = GetTimeStamp();
+            string json = JsonUtility.ToJson(finishLevelTime);
+            RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", finishLevelTime);
+            /*CustomEvent FinishLevel1 = new CustomEvent(levelTimeEvent)
             {
                 { "level_name", SceneManager.GetActiveScene().name },
                 { "end_time", levelEndTime },
                 { "time_to_complete", timeToComplete }
             };
-            AnalyticsService.Instance.RecordEvent(FinishLevel1);
+            AnalyticsService.Instance.RecordEvent(FinishLevel1);*/
         }
         else if (levelIndex == "2")
         {
-            CustomEvent FinishLevel2 = new CustomEvent(levelTimeEvent)
+            FinishLevelTime finishLevelTime = new FinishLevelTime();
+            finishLevelTime.level = "Level2";
+            finishLevelTime.eventName = "Level2_FinishTime";
+            finishLevelTime.time = timeToComplete;
+            finishLevelTime.timeStamp = GetTimeStamp();
+            string json = JsonUtility.ToJson(finishLevelTime);
+            RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", finishLevelTime);
+            /*CustomEvent FinishLevel2 = new CustomEvent(levelTimeEvent)
             {
                 { "level_name", SceneManager.GetActiveScene().name },
                 { "end_time", levelEndTime },
                 { "time_to_complete", timeToComplete }
             };
-            AnalyticsService.Instance.RecordEvent(FinishLevel2);
+            AnalyticsService.Instance.RecordEvent(FinishLevel2);*/
         }
 
         

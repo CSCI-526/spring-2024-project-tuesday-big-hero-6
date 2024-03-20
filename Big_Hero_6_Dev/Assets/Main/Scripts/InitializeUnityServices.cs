@@ -6,7 +6,7 @@ using Unity.Services.Core.Environments;
 
 public class InitializeUnityServices : MonoBehaviour
 {
-    async void Start()
+    /*async void Start()
     {
         await UnityServices.InitializeAsync();
 
@@ -23,5 +23,5 @@ public class InitializeUnityServices : MonoBehaviour
     void ConsentGiven()
     {
         AnalyticsService.Instance.StartDataCollection();
-    }
+    }*/
 }
