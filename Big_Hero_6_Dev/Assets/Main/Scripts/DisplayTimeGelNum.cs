@@ -10,8 +10,8 @@ public class DisplayTimeGelNum : MonoBehaviour
     {
         
         Shadowing shadowing = GetComponent<Shadowing>();
-        ShootingGelTest shootingGelTest = GetComponent<ShootingGelTest>();
-        gelNumberText.text = "Your time gel number is " + shootingGelTest.shootNum;
+        ShootingGel shootingGel = GetComponent<ShootingGel>();
+        gelNumberText.text = "Your time gel number is " + shootingGel.shootNum;
 
     }
 }
