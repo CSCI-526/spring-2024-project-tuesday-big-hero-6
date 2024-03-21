@@ -12,7 +12,7 @@ public class ShootingGelTest : MonoBehaviour
     public Transform shootPointDownside;
     private float horizontalInput;
     private float verticalInput;
-    private int shootNum = 1;
+    public int shootNum = 1;
     
     
     void Update()
