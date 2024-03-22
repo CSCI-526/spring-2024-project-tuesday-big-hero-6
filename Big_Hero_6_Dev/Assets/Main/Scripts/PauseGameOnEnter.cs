@@ -21,6 +21,7 @@ public class PauseGameOnEnter : MonoBehaviour
             }
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
+            Global.gamePause = true;
             winGameObject.SetActive(true);
         }
     }

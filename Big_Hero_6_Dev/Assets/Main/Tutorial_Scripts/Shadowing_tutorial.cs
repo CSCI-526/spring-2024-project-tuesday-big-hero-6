@@ -24,7 +24,7 @@ public class Shadowing_Tutorial : MonoBehaviour
         RecordPosition();
         RenderShadow();
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && !PauseGameOnEnter_Tutorial.gamePause)
         {
             pauseText.SetActive(false); // inactive pause text
             Time.timeScale = 1; // restore the time in game

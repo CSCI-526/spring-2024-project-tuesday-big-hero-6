@@ -26,6 +26,7 @@ public class RestartScence : MonoBehaviour
         Global.redKey = false;
         Global.yellowKey = false;
         Time.timeScale = 1;
+        Global.gamePause = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

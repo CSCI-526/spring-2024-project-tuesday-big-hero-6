@@ -37,6 +37,7 @@ public class DevPlayerMovement_Tutorial : MonoBehaviour
     void Start()
     {
         // Win_UIObject.SetActive(false);
+        PauseGameOnEnter_Tutorial.gamePause = false;
 
     }
 

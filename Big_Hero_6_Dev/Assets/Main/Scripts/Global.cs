@@ -6,6 +6,7 @@ public class Global : MonoBehaviour
 {
     public static bool yellowKey = false;
     public static bool redKey = false;
+    public static bool gamePause = false;
 
     // Start is called before the first frame update
     void Start()

@@ -12,7 +12,7 @@ public class ShootingGel : MonoBehaviour
     public Transform shootPointDownside;
     private float horizontalInput;
     private float verticalInput;
-    public int shootNum = 1;
+    public int shootNum = 2;
     
     
     void Update()
@@ -23,7 +23,7 @@ public class ShootingGel : MonoBehaviour
         Debug.Log(horizontalInput);
         Debug.Log(verticalInput);
         
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && !Global.gamePause)
         {
             Shoot();
         }

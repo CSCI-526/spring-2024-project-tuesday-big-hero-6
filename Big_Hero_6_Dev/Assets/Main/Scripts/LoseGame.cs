@@ -13,6 +13,7 @@ public class LoseGame : MonoBehaviour
         if (transform.position.y < pauseThreshold)
         {
             Time.timeScale = 0;
+            Global.gamePause = true;
             loseGameObject.SetActive(true);
         }
     }

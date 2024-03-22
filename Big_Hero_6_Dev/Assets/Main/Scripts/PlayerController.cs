@@ -35,6 +35,7 @@ public class DevPlayerMovement : MonoBehaviour
     {
         // Win_UIObject.SetActive(false);
         Time.timeScale = 1;
+        Global.gamePause = false;
     }
 
     void Update() 

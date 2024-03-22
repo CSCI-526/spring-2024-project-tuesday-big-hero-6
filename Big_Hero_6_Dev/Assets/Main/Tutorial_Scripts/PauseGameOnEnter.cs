@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class PauseGameOnEnter_Tutorial : MonoBehaviour
 {
     public GameObject winGameObject;
+    public static bool gamePause = false;
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -15,6 +16,7 @@ public class PauseGameOnEnter_Tutorial : MonoBehaviour
         {
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
+            gamePause = true;
             winGameObject.SetActive(true);
         }
     }
