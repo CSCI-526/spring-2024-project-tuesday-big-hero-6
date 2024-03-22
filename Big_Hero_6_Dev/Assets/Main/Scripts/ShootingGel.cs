@@ -12,7 +12,7 @@ public class ShootingGel : MonoBehaviour
     public Transform shootPointDownside;
     private float horizontalInput;
     private float verticalInput;
-    public int shootNum = 2;
+    public int shootNum = 1;
     
     
     void Update()
