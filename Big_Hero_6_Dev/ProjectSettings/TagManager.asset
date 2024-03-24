@@ -8,6 +8,7 @@ TagManager:
   - TimeGel
   - TimeBarrier
   - Key
+  - Trap
   layers:
   - Default
   - TransparentFX

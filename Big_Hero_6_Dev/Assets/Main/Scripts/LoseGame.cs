@@ -17,4 +17,16 @@ public class LoseGame : MonoBehaviour
             loseGameObject.SetActive(true);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Trap"))
+        {
+            Time.timeScale = 0;
+            Global.gamePause = true;
+            loseGameObject.SetActive(true);
+        }
+
+    }
+
 }
