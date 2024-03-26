@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Global : MonoBehaviour
 {
+    public static bool tutorial1 = false;
+    public static bool tutorial2 = false;
+    public static bool showTutorial2 = false;
+
     public static bool yellowKey = false;
     public static bool redKey = false;
     public static bool gamePause = false;

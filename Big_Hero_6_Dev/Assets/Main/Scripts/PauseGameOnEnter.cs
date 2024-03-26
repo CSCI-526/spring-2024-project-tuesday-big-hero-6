@@ -16,13 +16,21 @@ public class PauseGameOnEnter : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         if (other.gameObject.CompareTag("Player") && Global.yellowKey && Global.redKey)
         {
-            if(currentScene.name !="Tutorial1" && currentScene.name != "Tutorial2"){
+            if(currentScene.name != "Tutorial1" && currentScene.name != "Tutorial2"){
                 levelAnalyticsManager.EndLevel();
+            }
+            
+            if (currentScene.name == "Tutorial2")
+            {
+                Global.tutorial2 = true;
+                Debug.Log("Global tutorial2 changed!");
             }
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
             Global.gamePause = true;
             winGameObject.SetActive(true);
+            
+            
         }
     }
 }

@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5f0c83ca1a6414b87560ab40e7fbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winGameObject: {fileID: 1444815564}
+  winGameObject: {fileID: 1266712681}
 --- !u!1 &683540087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1617,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b62a20001f14b0885398ce04c30077, type: 3}
---- !u!1 &1444815564 stripped
+--- !u!1 &1266712681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1096454741742860256, guid: 08b62a20001f14b0885398ce04c30077, type: 3}
   m_PrefabInstance: {fileID: 1266712680}

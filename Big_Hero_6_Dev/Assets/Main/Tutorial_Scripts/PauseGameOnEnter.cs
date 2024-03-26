@@ -12,6 +12,13 @@ public class PauseGameOnEnter_Tutorial : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Tutorial1")
+        {
+            Global.tutorial1 = true;
+            Global.showTutorial2 = true;
+            Debug.Log("Global tutorial1 changed!");
+        }
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Game Over. You Succeed!");
