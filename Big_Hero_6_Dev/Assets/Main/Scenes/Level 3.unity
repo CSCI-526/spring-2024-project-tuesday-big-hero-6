@@ -2503,7 +2503,6 @@ MonoBehaviour:
   traps:
   - {fileID: 1896534912}
   - {fileID: 2082704981}
-  - {fileID: 0}
 --- !u!1 &269263658
 GameObject:
   m_ObjectHideFlags: 0

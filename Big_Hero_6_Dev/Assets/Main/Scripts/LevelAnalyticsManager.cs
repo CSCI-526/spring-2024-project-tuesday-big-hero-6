@@ -89,6 +89,16 @@ public class LevelAnalyticsManager : MonoBehaviour
             };
             AnalyticsService.Instance.RecordEvent(FinishLevel2);*/
         }
+        else if (levelIndex == "3")
+        {
+            FinishLevelTime finishLevelTime = new FinishLevelTime();
+            finishLevelTime.level = "Level3";
+            finishLevelTime.eventName = "Level3_FinishTime";
+            finishLevelTime.time = timeToComplete;
+            finishLevelTime.timeStamp = GetTimeStamp();
+            string json = JsonUtility.ToJson(finishLevelTime);
+            RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", finishLevelTime);
+        }
 
         
         Debug.Log("Level end analytics result: " + timeToComplete);
