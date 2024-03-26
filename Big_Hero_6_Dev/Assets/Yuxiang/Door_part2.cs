@@ -15,7 +15,7 @@ public class Door_part2 : MonoBehaviour
             // 向左移动
             if (distanceMoved < totalDistance)
             {
-                float step = speed * Time.deltaTime;
+                float step = 2*speed * Time.deltaTime;
                 float distanceToMove = Mathf.Min(step, totalDistance - distanceMoved);
                 transform.position += Vector3.left * distanceToMove;
                 distanceMoved += distanceToMove;
@@ -27,7 +27,7 @@ public class Door_part2 : MonoBehaviour
             // 向右移动回到起始位置
             if (distanceMoved > 0.0f)
             {
-                float step = speed * Time.deltaTime;
+                float step = speed * Time.deltaTime/2;
                 // 确保不会超过起始位置
                 float distanceToMove = Mathf.Min(step, distanceMoved);
                 transform.position += Vector3.right * distanceToMove;

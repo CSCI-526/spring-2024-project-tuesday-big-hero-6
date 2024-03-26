@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrowControlRight : MonoBehaviour
+public class ArrowControleft : MonoBehaviour
 {
-    public float arrow_speed = 8f;
+    public float arrow_speed = -8f;
     public float arrow_lifetime = 4f;
 
     void Start()

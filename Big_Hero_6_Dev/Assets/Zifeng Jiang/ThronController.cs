@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ThronController : MonoBehaviour, ITriggerable
 {
-    public float moveDistance = -10f; // 移动距离
+    public float moveDistance = -20f; // 移动距离
     public float moveSpeed = 3f; // 移动速度
     private Vector3 originalPosition; // 原始位置
     private Vector3 targetPosition; // 目标位置

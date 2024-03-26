@@ -20,8 +20,8 @@ public class ShootingGel : MonoBehaviour
         
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        Debug.Log(horizontalInput);
-        Debug.Log(verticalInput);
+        /*Debug.Log(horizontalInput);
+        Debug.Log(verticalInput);*/
         
         if (Input.GetKeyDown(KeyCode.K) && !Global.gamePause)
         {

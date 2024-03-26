@@ -25,6 +25,7 @@ public class ArrowLauncher : MonoBehaviour
 
     private void LaunchArrow()
     {
+        Debug.Log(launchPoint.position);
         Instantiate(arrowPrefab, launchPoint.position, Quaternion.identity);
         isLoaded = false;
     }
