@@ -13,6 +13,7 @@ public class ShootingGelTest : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public int shootNum = 1;
+    private bool gelStatus = true;
     
     
     void Update()
@@ -25,13 +26,21 @@ public class ShootingGelTest : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.K))
         {
+            if (shootNum == 1)
+            {
+                ProgressBarTest progressBarTest = GetComponent<ProgressBarTest>();
+                progressBarTest.ResetAndFillProgressBar();
+            }
             Shoot();
+
+
         }
     }
     IEnumerator setGelNumBack()
     {
         yield return new WaitForSeconds(5);
         shootNum = 1;
+        gelStatus = true;
     }
 
     void Shoot()
