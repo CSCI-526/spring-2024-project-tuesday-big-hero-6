@@ -15,17 +15,13 @@ public class FloorDisappear : MonoBehaviour
         {
 
 
-            timer += Time.deltaTime;
 
-            if (timer >= delay)
-            {
                 Destroy(gameObject);
                 Time.timeScale = 0; // pause game
                 pauseText.SetActive(true); // give tips
 
                 isTriggered = false;
                 timer = 0;
-            }
 
         }
     }
