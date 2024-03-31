@@ -8,7 +8,7 @@ public class ThronController : MonoBehaviour, ITriggerable
     public float moveSpeed = 3f; // 移动速度
     private Vector3 originalPosition; // 原始位置
     private Vector3 targetPosition; // 目标位置
-    private bool isOpening = false; // 是否正在打开
+    public bool isOpening = false; // 是否正在打开
 
     void Start()
     {

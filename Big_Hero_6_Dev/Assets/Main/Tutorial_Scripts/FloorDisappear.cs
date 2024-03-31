@@ -5,7 +5,8 @@ public class FloorDisappear : MonoBehaviour
     public GameObject pauseText;
     private float delay = 0.7f; 
     private float timer = 0; 
-    private bool isTriggered = false;
+    public static bool isTriggered = false;
+    public static int a = 1;
 
     private void Update()
     {
@@ -13,15 +14,13 @@ public class FloorDisappear : MonoBehaviour
         // wait for few seconds
         if (isTriggered)
         {
+            Debug.Log("Flooe Disappear");
+            Destroy(gameObject);
+            Time.timeScale = 0; // pause game
+            pauseText.SetActive(true); // give tips
 
-
-
-                Destroy(gameObject);
-                Time.timeScale = 0; // pause game
-                pauseText.SetActive(true); // give tips
-
-                isTriggered = false;
-                timer = 0;
+            isTriggered = false;
+            timer = 0;
 
         }
     }
