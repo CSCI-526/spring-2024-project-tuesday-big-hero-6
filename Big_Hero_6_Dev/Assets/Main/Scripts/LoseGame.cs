@@ -115,6 +115,7 @@ public class LoseGame : MonoBehaviour
 
     private void HandleDeath()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         Global.gamePause = true;
         if (!Global.deathHandled && (transform.position.y < pauseThreshold))
         {
@@ -159,11 +160,18 @@ public class LoseGame : MonoBehaviour
                 string json = JsonUtility.ToJson(deathtype);
                 RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", deathtype);
             }
+            else if (currentScene.name == "Tutorial1")
+            {
+                Time.timeScale = 1;
+                Global.gamePause = true;
+                PauseGameOnEnter_Tutorial.gamePause = true;
+                loseGameObject.SetActive(true);
+            }
         }
         Debug.Log("Hello");
         if (Global.deathHandled) return;
         Debug.Log("World");
-        Scene currentScene = SceneManager.GetActiveScene();
+        //Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.name == "Tutorial1")
         {
             Global.gamePause = true;
