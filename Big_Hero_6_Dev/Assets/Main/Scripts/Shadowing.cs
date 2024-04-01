@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Proyecto26;
+using System;
 public class PlayerPositon
 {
     public string level;
     public string eventName;
     public double posX_Shadowing;
     public double posY_Shadowing;
+     public long timeStamp;
 }
 public class Shadowing : MonoBehaviour
 {
@@ -28,6 +30,15 @@ public class Shadowing : MonoBehaviour
     {
         shadowInstance = Instantiate(shadowPrefab, transform.position, Quaternion.identity);
         levelAnalyticsManager = FindObjectOfType<LevelAnalyticsManager>();
+    }
+
+    public long GetTimeStamp()
+    {
+        DateTime now = DateTime.UtcNow;
+        DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        TimeSpan timeSpan = now - epoch;
+        long timestampSeconds = (long)timeSpan.TotalSeconds;
+        return timestampSeconds;
     }
 
     void Update()
@@ -94,6 +105,7 @@ public class Shadowing : MonoBehaviour
                 playerPositon.eventName = "Level1_PlayerPositon_Shadowing";
                 playerPositon.posX_Shadowing = posX_shadowing;
                 playerPositon.posY_Shadowing = posY_shadowing;
+                playerPositon.timeStamp = GetTimeStamp();
                 string json = JsonUtility.ToJson(playerPositon);
                 RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", playerPositon);
             }
@@ -104,6 +116,7 @@ public class Shadowing : MonoBehaviour
                 playerPositon.eventName = "Level2_PlayerPositon_Shadowing";
                 playerPositon.posX_Shadowing = posX_shadowing;
                 playerPositon.posY_Shadowing = posY_shadowing;
+                playerPositon.timeStamp = GetTimeStamp();
                 string json = JsonUtility.ToJson(playerPositon);
                 RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", playerPositon);
             }
@@ -114,6 +127,7 @@ public class Shadowing : MonoBehaviour
                 playerPositon.eventName = "Level3_PlayerPositon_Shadowing";
                 playerPositon.posX_Shadowing = posX_shadowing;
                 playerPositon.posY_Shadowing = posY_shadowing;
+                playerPositon.timeStamp = GetTimeStamp();
                 string json = JsonUtility.ToJson(playerPositon);
                 RestClient.Post("https://big-hero-6-1efc3-default-rtdb.firebaseio.com/.json", playerPositon);
             }

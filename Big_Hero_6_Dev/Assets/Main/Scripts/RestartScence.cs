@@ -50,6 +50,7 @@ public class RestartScence : MonoBehaviour
             Global.yellowKey = false;
             Time.timeScale = 1;
             Global.gamePause = false;
+            Global.deathHandled = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 

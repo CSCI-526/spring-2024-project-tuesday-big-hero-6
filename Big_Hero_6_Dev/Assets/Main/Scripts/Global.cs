@@ -11,6 +11,7 @@ public class Global : MonoBehaviour
     public static bool yellowKey = false;
     public static bool redKey = false;
     public static bool gamePause = false;
+    public static bool deathHandled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class Global : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(deathHandled);
+        Debug.Log(gamePause);
     }
 }

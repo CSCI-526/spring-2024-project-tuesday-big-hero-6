@@ -46,6 +46,8 @@ public class SaveManager : MonoBehaviour
 
         if (hasCheckpoint)
         {
+            Global.deathHandled = false;
+           //Global.gamePause = false;
             Debug.Log($"Moving player to checkpoint at {lastCheckpointPosition}.");
             player.transform.position = lastCheckpointPosition;
         }

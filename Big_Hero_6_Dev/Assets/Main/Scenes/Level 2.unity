@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 197125694}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 665363822}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2521,7 +2521,7 @@ GameObject:
   - component: {fileID: 743295242}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3102,7 +3102,7 @@ GameObject:
   - component: {fileID: 924272242}
   m_Layer: 0
   m_Name: Thron
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,7 +3365,7 @@ GameObject:
   - component: {fileID: 1116519226}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3540,7 +3540,7 @@ GameObject:
   - component: {fileID: 1178162681}
   m_Layer: 0
   m_Name: Triangle (8)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4322,6 +4322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ESC
       objectReference: {fileID: 0}
+    - target: {fileID: 6095004738997874954, guid: 1925ca3da4e7e4a6fab9624d3df72afb, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4982,7 +4986,7 @@ GameObject:
   - component: {fileID: 1685543841}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5394,7 +5398,7 @@ GameObject:
   - component: {fileID: 1776205232}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5845,7 +5849,7 @@ GameObject:
   - component: {fileID: 1847010459}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6138,7 +6142,7 @@ GameObject:
   - component: {fileID: 1916327103}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
