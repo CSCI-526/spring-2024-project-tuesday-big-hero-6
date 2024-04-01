@@ -52,6 +52,8 @@ public class RestartScence : MonoBehaviour
             Global.gamePause = false;
             Global.deathHandled = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("Game Restart");
+            Debug.Log(Global.deathHandled);
         }
 
     }
