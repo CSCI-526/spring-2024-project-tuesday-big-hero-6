@@ -16,12 +16,20 @@ public class TrapController : MonoBehaviour, ITriggerable
         targetPosition = originalPosition + new Vector3(0, moveDistance, 0); // 计算目标位置
     }
 
+    IEnumerator ResetPosition()
+    {
+        yield return new WaitForSeconds(5);
+        transform.position = originalPosition;
+        isOpening = false;
+    }
+    
     void Update()
     {
         if (isOpening)
         {
             // 移动门到目标位置
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            StartCoroutine(ResetPosition());
         }
     }
 
