@@ -9,6 +9,8 @@ public class ThronController : MonoBehaviour, ITriggerable
     private Vector3 originalPosition; // 原始位置
     private Vector3 targetPosition; // 目标位置
     public bool isOpening = false; // 是否正在打开
+    public GameObject visibleFloor;
+    public GameObject[] traps;
 
     void Start()
     {
@@ -18,9 +20,14 @@ public class ThronController : MonoBehaviour, ITriggerable
 
     IEnumerator ResetPosition()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         transform.position = originalPosition;
         isOpening = false;
+        visibleFloor.SetActive(true);
+        foreach (var trap in traps)
+        {
+            trap.SetActive(false);
+        }
     }
 
     void Update()

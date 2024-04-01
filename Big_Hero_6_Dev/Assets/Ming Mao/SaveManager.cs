@@ -7,6 +7,7 @@ public class SaveManager : MonoBehaviour
     public static SaveManager Instance { get; private set; }
     private Vector2 lastCheckpointPosition;
     private bool hasCheckpoint = false;
+    public GameObject player;
 
     void Awake()
     {
@@ -34,6 +35,14 @@ public class SaveManager : MonoBehaviour
 
         Time.timeScale = 1f;
         Debug.Log("Game resumed.");
+        ShootingGel shootingGel = GameObject.Find("PlayerSquare").GetComponent<ShootingGel>();
+        ProgressBar progressBar = GameObject.Find("PlayerSquare").GetComponent<ProgressBar>();
+        progressBar.SaveBackProgressBar();
+        shootingGel.shootNum = 1;
+        if (shootingGel.shotObject != null)
+        {
+            shootingGel.shotObject.SetActive(false);
+        }
 
         if (hasCheckpoint)
         {

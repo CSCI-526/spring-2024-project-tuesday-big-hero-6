@@ -13,6 +13,8 @@ public class ShootingGel : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public int shootNum = 1;
+    public GameObject shotObject;
+    private bool gelStatus = true;
     
     
     void Update()
@@ -22,9 +24,14 @@ public class ShootingGel : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         /*Debug.Log(horizontalInput);
         Debug.Log(verticalInput);*/
-        
+
         if (Input.GetKeyDown(KeyCode.K) && !Global.gamePause)
         {
+            if (shootNum == 1)
+            {
+                ProgressBar progressBar = GetComponent<ProgressBar>();
+                progressBar.ResetAndFillProgressBar();
+            }
             Shoot();
         }
     }
@@ -32,6 +39,8 @@ public class ShootingGel : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         shootNum = 1;
+        gelStatus = true;
+
     }
 
     void Shoot()
@@ -40,7 +49,7 @@ public class ShootingGel : MonoBehaviour
         {
             if (horizontalInput >= 0 && verticalInput == 0)
             {
-                GameObject shotObject =
+                shotObject =
                     Instantiate(objectToShoot, shootPointForward.position, shootPointForward.rotation);
                 shootNum = 0;
                 if (shotObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
@@ -53,7 +62,7 @@ public class ShootingGel : MonoBehaviour
             }
             else if (horizontalInput < 0)
             {
-                GameObject shotObject =
+                shotObject =
                     Instantiate(objectToShoot, shootPointBackward.position, shootPointBackward.rotation);
                 shootNum = 0;
                 if (shotObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
@@ -66,7 +75,7 @@ public class ShootingGel : MonoBehaviour
             }
             else if (verticalInput > 0)
             {
-                GameObject shotObject =
+                shotObject =
                     Instantiate(objectToShoot, shootPointUpside.position, shootPointUpside.rotation);
                 shootNum = 0;
                 if (shotObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
@@ -79,7 +88,7 @@ public class ShootingGel : MonoBehaviour
             }
             else if (verticalInput < 0)
             {
-                GameObject shotObject =
+                shotObject =
                     Instantiate(objectToShoot, shootPointDownside.position, shootPointDownside.rotation);
                 shootNum = 0;
                 if (shotObject.TryGetComponent<Rigidbody>(out Rigidbody rb))

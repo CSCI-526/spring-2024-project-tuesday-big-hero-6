@@ -20,7 +20,7 @@ public class LoseGame : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Trap"))
+        if (other.CompareTag("Trap") || other.CompareTag("Thorn"))
         {
             HandleDeath();
         }
