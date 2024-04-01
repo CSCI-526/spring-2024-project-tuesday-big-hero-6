@@ -61,6 +61,12 @@ public class ButtonControl : MonoBehaviour
         SceneManager.LoadScene("Tutorial2");
     }
 
+    public void Tutorial3()
+    {
+        ResetGame();
+        SceneManager.LoadScene("Tutorial3");
+    }
+
     public void NextLevel()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -77,6 +83,9 @@ public class ButtonControl : MonoBehaviour
                 Level1();
                 break;
             case "Level 1":
+                Tutorial3();
+                break;
+            case "Tutorial3":
                 Level2();
                 break;
             case "Level 2":
