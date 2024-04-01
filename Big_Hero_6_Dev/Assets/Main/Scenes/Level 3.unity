@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 65036668}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 190708434}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2646,7 +2646,7 @@ GameObject:
   - component: {fileID: 294504675}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4358,7 +4358,7 @@ GameObject:
   - component: {fileID: 550993482}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4519,6 +4519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9481cf40f80ef824b8da3d5baa244b19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelIndex: 
 --- !u!1 &553662378
 GameObject:
   m_ObjectHideFlags: 0
@@ -8382,7 +8383,7 @@ GameObject:
   - component: {fileID: 961611612}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9404,7 +9405,7 @@ GameObject:
   - component: {fileID: 1074982792}
   m_Layer: 0
   m_Name: Thron
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12962,7 +12963,7 @@ GameObject:
   - component: {fileID: 1659089503}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14941,7 +14942,7 @@ GameObject:
   - component: {fileID: 1852352806}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15071,7 +15072,7 @@ GameObject:
   - component: {fileID: 1854142017}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Trap
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
