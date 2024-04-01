@@ -13,11 +13,7 @@ public class LoseGame : MonoBehaviour
     {
         if (transform.position.y < pauseThreshold)
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            Debug.Log("Current Scene is: " + currentScene.name);
-            Global.gamePause = true;
-            PauseGameOnEnter_Tutorial.gamePause = true;
-            loseGameObject.SetActive(true);
+            HandleDeath();
         }
     }
 
@@ -25,11 +21,24 @@ public class LoseGame : MonoBehaviour
     {
         if (other.CompareTag("Trap"))
         {
+            HandleDeath();
+        }
+    }
+
+    private void HandleDeath()
+    {
+        if (SaveManager.Instance.HasCheckpoint())
+        {
+            SaveManager.Instance.StartCoroutine(SaveManager.Instance.RespawnPlayer(gameObject));
+        }
+        else
+        {
+
             Time.timeScale = 0;
             Global.gamePause = true;
+            PauseGameOnEnter_Tutorial.gamePause = true;
             loseGameObject.SetActive(true);
         }
-
     }
 
 }
