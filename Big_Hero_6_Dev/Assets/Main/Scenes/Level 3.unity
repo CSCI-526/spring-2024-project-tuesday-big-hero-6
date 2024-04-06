@@ -2090,6 +2090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instruction
       objectReference: {fileID: 0}
+    - target: {fileID: 8420741461567289911, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
+      propertyPath: m_Name
+      value: Try_text
+      objectReference: {fileID: 0}
     - target: {fileID: 8547169317783117782, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 2.3
