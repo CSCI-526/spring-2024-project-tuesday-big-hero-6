@@ -6,19 +6,48 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public GameObject menu;
+    public GameObject tabMenu;
+    public GameObject instructMenu;
 
     void Start()
     {
         menu.SetActive(false);
+        tabMenu.SetActive(true);
+        instructMenu.SetActive(false);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            menu.SetActive(!menu.activeSelf);
+            if (menu.activeSelf && instructMenu.activeSelf)
+            {
+                ShowTabMenu();
+            }
+            else
+            {
+                menu.SetActive(!menu.activeSelf);
+                ShowTabMenu();
+            }
             PauseGame(menu.activeSelf);
         }
+    }
+
+    private void ShowTabMenu()
+    {
+        tabMenu.SetActive(true);
+        instructMenu.SetActive(false);
+    }
+
+    public void ShowInstructMenu()
+    {
+        tabMenu.SetActive(false);
+        instructMenu.SetActive(true);
+    }
+
+    public void BackToTabMenu()
+    {
+        ShowTabMenu();
     }
 
     void PauseGame(bool isPaused)
