@@ -9,6 +9,9 @@ TagManager:
   - TimeBarrier
   - Key
   - Trap
+  - Thorn
+  - Button_part1
+  - Thorn Level2
   layers:
   - Default
   - TransparentFX

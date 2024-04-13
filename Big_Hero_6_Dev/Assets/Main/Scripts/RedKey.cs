@@ -11,7 +11,7 @@ public class RedKey : MonoBehaviour
             Global.redKey = true;
 
             GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
-            GameObject[] thorns = GameObject.FindGameObjectsWithTag("Thorn");
+            GameObject[] thorns = GameObject.FindGameObjectsWithTag("Thorn Level2");
             GameObject[] gels = GameObject.FindGameObjectsWithTag("TimeGel");
             GameObject[] keys = GameObject.FindGameObjectsWithTag("Key");
 
