@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Shadowing_Tutorial : MonoBehaviour
 {
-    public GameObject pauseText;
+    public GameObject pauseText1;
+    public GameObject pauseText2;
+    public GameObject pauseImg;
     public GameObject shadowPrefab; // Shadow Prefab
     public GameObject shadowInstance; // Shadow Instance
     private List<Vector3> positionList = new List<Vector3>(); // Shadow Position List
@@ -26,7 +28,9 @@ public class Shadowing_Tutorial : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J) && !PauseGameOnEnter_Tutorial.gamePause)
         {
-            pauseText.SetActive(false); // inactive pause text
+            pauseText1.SetActive(false); // inactive pause text
+            pauseText2.SetActive(false);
+            pauseImg.SetActive(false);
             Time.timeScale = 1; // restore the time in game
             MoveToShadowPosition(); // Go back to the shadow
         }

@@ -18,7 +18,9 @@ public class DevPlayerMovement_Tutorial : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     public TextMeshProUGUI winGameText;
     public GameObject winGameObject;
-    public GameObject jumpInstruction;
+    public GameObject jumpInstruction1;
+    public GameObject jumpInstruction2;
+    public GameObject jumpImage;
 
     //public GameObject scene1;
     //public GameObject scene2;
@@ -46,7 +48,9 @@ public class DevPlayerMovement_Tutorial : MonoBehaviour
     {
         if(couldJump)
         {
-            jumpInstruction.SetActive(true); // give jump tips
+            jumpInstruction1.SetActive(true); // give jump tips
+            jumpInstruction2.SetActive(true); // give jump tips
+            jumpImage.SetActive(true);
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
