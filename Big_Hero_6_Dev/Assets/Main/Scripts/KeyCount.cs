@@ -86,7 +86,18 @@ public class KeyCount : MonoBehaviour
         if (currentScene.name == "Level 3")
         {
             Debug.Log("This is Level 3! Key Count Script!");
-            for (global::System.Int32 i = 0; i < 4; i++)
+            for (global::System.Int32 i = 0; i < 2; i++)
+            {
+                Debug.Log("Set " + i + " key active!");
+                //keyCounts[i].SetActive(true);
+                keyCountImages[keyCounts.Length - i - 1].gameObject.SetActive(true);
+                //keyCountImages[keyCounts.Length - i - 1].color = new Color32(255, 255, 255, 255);
+            }
+        }
+        if (currentScene.name == "Level 4")
+        {
+            Debug.Log("This is Level 3! Key Count Script!");
+            for (global::System.Int32 i = 0; i < 3; i++)
             {
                 Debug.Log("Set " + i + " key active!");
                 //keyCounts[i].SetActive(true);

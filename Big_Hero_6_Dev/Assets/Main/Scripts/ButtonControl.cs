@@ -92,6 +92,9 @@ public class ButtonControl : MonoBehaviour
                 Level3();
                 break;
             case "Level 3":
+                Level4();
+                break;
+            case "Level 4":
                 MainMenu();
                 break;
             default:

@@ -42,9 +42,9 @@ public class LoseGame : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(Global.deathHandled);
-        Debug.Log(transform.position.y);
-        Debug.Log(pauseThreshold);
+        //Debug.Log(Global.deathHandled);
+       // Debug.Log(transform.position.y);
+       // Debug.Log(pauseThreshold);
         if (!Global.deathHandled && (transform.position.y < pauseThreshold))
         {
             Debug.Log("HandleDeath");
