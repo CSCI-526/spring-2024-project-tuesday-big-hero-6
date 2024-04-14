@@ -7,6 +7,7 @@ public class RestartScence : MonoBehaviour
 {
 
     public GameObject t1_pauseText;
+    public KeyCount keyCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +49,8 @@ public class RestartScence : MonoBehaviour
             Debug.Log("Restart: " + SceneManager.GetActiveScene().name);
             Global.redKey = false;
             Global.yellowKey = false;
+            Global.keyNum = 0;
+            //keyCount.keyCountMethod();
             Time.timeScale = 1;
             Global.gamePause = false;
             Global.deathHandled = false;

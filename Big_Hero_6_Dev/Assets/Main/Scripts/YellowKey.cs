@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class YellowKey : MonoBehaviour
 {
@@ -14,6 +15,14 @@ public class YellowKey : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Global.yellowKey = true;
+            GameObject[] keyCounts = GameObject.FindGameObjectsWithTag("KeyCount");
+            Image[] keyCountImages = new Image[keyCounts.Length];
+            for (int i = 0; i < keyCounts.Length; i++)
+            {
+                keyCountImages[i] = keyCounts[i].GetComponent<Image>();
+            }
+            keyCountImages[Global.keyNum].color = new Color32(255, 255, 255, 255);
+            Global.keyNum++;
 
             Destroy(gameObject);
 

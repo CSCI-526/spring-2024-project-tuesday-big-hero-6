@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RedKey : MonoBehaviour
 {
@@ -9,6 +11,14 @@ public class RedKey : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Global.redKey = true;
+            GameObject[] keyCounts = GameObject.FindGameObjectsWithTag("KeyCount");
+            Image[] keyCountImages = new Image[keyCounts.Length];
+            for (int i = 0; i < keyCounts.Length; i++)
+            {
+                keyCountImages[i] = keyCounts[i].GetComponent<Image>();
+            }
+            keyCountImages[Global.keyNum].color = new Color32(255, 255, 255, 255);
+            Global.keyNum++;
 
             GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
             GameObject[] thorns = GameObject.FindGameObjectsWithTag("Thorn Level2");

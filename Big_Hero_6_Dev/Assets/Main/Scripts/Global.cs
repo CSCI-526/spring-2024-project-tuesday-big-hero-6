@@ -10,6 +10,7 @@ public class Global : MonoBehaviour
 
     public static bool yellowKey = false;
     public static bool redKey = false;
+    public static int keyNum = 0;
     public static bool gamePause = false;
     public static bool deathHandled = false;
 
@@ -22,7 +23,7 @@ public class Global : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(deathHandled);
-        Debug.Log(gamePause);
+        //Debug.Log(deathHandled);
+        //Debug.Log(gamePause);
     }
 }
