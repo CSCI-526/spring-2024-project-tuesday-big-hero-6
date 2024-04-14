@@ -104,6 +104,7 @@ public class ButtonControl : MonoBehaviour
     {
         Global.redKey = false;
         Global.yellowKey = false;
+        Global.keyNum = 0;
         Time.timeScale = 1;
     }
 }
