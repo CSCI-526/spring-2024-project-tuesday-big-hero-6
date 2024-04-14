@@ -1709,13 +1709,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Try_text
       objectReference: {fileID: 0}
+    - target: {fileID: 8420741461567289911, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8547169317783117782, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10.12
+      value: 7.52
       objectReference: {fileID: 0}
     - target: {fileID: 8547169317783117782, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.08
+      value: 5.03
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4346015355037847552, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
@@ -3210,6 +3214,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 475810269}
     m_Modifications:
+    - target: {fileID: 4072175342158435803, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072175342158435803, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072175342158435803, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072175342158435803, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 6283670398801743541, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_Name
       value: keyCount
@@ -8053,8 +8073,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
