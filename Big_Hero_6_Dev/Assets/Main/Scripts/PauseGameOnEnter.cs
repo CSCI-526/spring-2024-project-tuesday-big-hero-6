@@ -24,6 +24,7 @@ public class PauseGameOnEnter : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Player") && currentScene.name == "Tutorial2" && Global.keyNum == 2)
         {
+            Global.tutorial2 = true;
             levelAnalyticsManager.EndLevel();
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
@@ -32,7 +33,7 @@ public class PauseGameOnEnter : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Player") && currentScene.name == "Tutorial3" && Global.keyNum == 2)
         {
-            Global.tutorial2 = true;
+            //Global.tutorial2 = true;
             Debug.Log("Global tutorial2 changed!");
             Debug.Log("Game Over. You Succeed!");
             Time.timeScale = 0;
