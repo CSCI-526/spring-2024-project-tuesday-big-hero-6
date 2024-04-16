@@ -8,8 +8,8 @@ public class ShowHideText : MonoBehaviour
 
     private void Start()
     {
-        instructionText.gameObject.SetActive(true);
-        Invoke("HideText", 2f);
+        //instructionText.gameObject.SetActive(true);
+        //Invoke("HideText", 2f);
     }
 
     void HideText()
