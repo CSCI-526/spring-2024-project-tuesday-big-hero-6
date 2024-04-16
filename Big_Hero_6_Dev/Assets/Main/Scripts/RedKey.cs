@@ -20,8 +20,8 @@ public class RedKey : MonoBehaviour
             keyCountImages[Global.keyNum].color = new Color32(255, 255, 255, 255);
             Global.keyNum++;
 
-            GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
-            GameObject[] thorns = GameObject.FindGameObjectsWithTag("Thorn Level2");
+            GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor1");
+            //GameObject[] thorns = GameObject.FindGameObjectsWithTag("Thorn Level2");
             GameObject[] gels = GameObject.FindGameObjectsWithTag("TimeGel");
             GameObject[] keys = GameObject.FindGameObjectsWithTag("Key");
 
@@ -34,15 +34,15 @@ public class RedKey : MonoBehaviour
                 }
 
             }
-            foreach (GameObject thorn in thorns)
-            {
-                if (thorn != null)
-                {
-                    Destroy(thorn);
-                    Debug.Log("Thorn has been destroyed!");
-                }
+            //foreach (GameObject thorn in thorns)
+            //{
+            //    if (thorn != null)
+            //    {
+            //        Destroy(thorn);
+            //        Debug.Log("Thorn has been destroyed!");
+            //    }
 
-            }
+            //}
             foreach (GameObject gel in gels)
             {
                 if (gel != null)
