@@ -9,6 +9,8 @@ public class SaveManager : MonoBehaviour
     private bool hasCheckpoint = false;
     public GameObject player;
 
+    private bool canPressJ = true;
+
     void Awake()
     {
         if (Instance == null)
@@ -31,8 +33,10 @@ public class SaveManager : MonoBehaviour
     {
         Debug.Log("RespawnPlayer started. Game paused.");
         Time.timeScale = 0f;
+        Global.gamePause = true;
         yield return new WaitForSecondsRealtime(1f);
 
+        Global.gamePause = false;
         Time.timeScale = 1f;
         Debug.Log("Game resumed.");
         ShootingGel shootingGel = GameObject.Find("PlayerSquare").GetComponent<ShootingGel>();
@@ -50,6 +54,7 @@ public class SaveManager : MonoBehaviour
            //Global.gamePause = false;
             Debug.Log($"Moving player to checkpoint at {lastCheckpointPosition}.");
             player.transform.position = lastCheckpointPosition;
+            StartCoroutine(DisableJKeyForAWhile());
         }
         else
         {
@@ -57,6 +62,17 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+    private IEnumerator DisableJKeyForAWhile()
+    {
+        canPressJ = false;
+        yield return new WaitForSeconds(1f);
+        canPressJ = true;
+    }
+
+    public bool CanPressJ()
+    {
+        return canPressJ;
+    }
 
     public bool HasCheckpoint()
     {

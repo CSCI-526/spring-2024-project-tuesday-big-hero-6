@@ -46,7 +46,7 @@ public class Shadowing : MonoBehaviour
         RecordPosition();
         RenderShadow();
 
-        if (Input.GetKeyDown(KeyCode.J) && !Global.gamePause)
+        if (Input.GetKeyDown(KeyCode.J) && !Global.gamePause && SaveManager.Instance.CanPressJ() )
         {
             MoveToShadowPosition(); // Go back to the shadow
         }
