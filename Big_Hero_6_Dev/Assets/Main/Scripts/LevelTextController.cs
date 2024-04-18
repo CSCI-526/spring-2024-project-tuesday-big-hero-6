@@ -22,24 +22,36 @@ public class LevelTextController : MonoBehaviour
         {
             //if (levelTexts.Length >= 2)
             //{
+            foreach (GameObject text in levelTexts)
+            {
+                text.SetActive(false);
+            }
+            /**
                 levelTexts[0].SetActive(false);
                 levelTexts[1].SetActive(false);
                 levelTexts[2].SetActive(false);
                 levelTexts[3].SetActive(false);
                 levelTexts[4].SetActive(false);
                 levelTexts[5].SetActive(false);
+            */
             //}
         }
         else
         {
             if (levelTexts.Length >= 2)
             {
+                foreach (GameObject text in levelTexts)
+                {
+                    text.SetActive(false);
+                }
+                /**
                 levelTexts[0].SetActive(true);
                 levelTexts[1].SetActive(true);
                 levelTexts[2].SetActive(true);
                 levelTexts[3].SetActive(true);
                 levelTexts[4].SetActive(true);
                 levelTexts[5].SetActive(true);
+                */
             }
         }
 
