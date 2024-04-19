@@ -3673,7 +3673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: -20
-  moveSpeed: 5
+  moveSpeed: 2
   isOpening: 0
   visibleFloor: {fileID: 0}
   traps: []
