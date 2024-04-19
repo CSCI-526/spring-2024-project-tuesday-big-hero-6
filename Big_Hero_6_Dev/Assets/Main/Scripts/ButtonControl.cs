@@ -51,6 +51,8 @@ public class ButtonControl : MonoBehaviour
 
     public void Tutorial1()
     {
+        Debug.Log("Enter button reset");
+        DevPlayerMovement_Tutorial.couldJump = false;
         ResetGame();
         SceneManager.LoadScene("Tutorial1");
     }
