@@ -12,6 +12,8 @@ public class ThronController : MonoBehaviour, ITriggerable
     public GameObject visibleFloor;
     public GameObject[] traps;
 
+    public But3_Detector but3_Detector;
+
     void Start()
     {
         originalPosition = transform.position; // 保存原始位置
@@ -22,6 +24,8 @@ public class ThronController : MonoBehaviour, ITriggerable
     {
         yield return new WaitForSeconds(3);
         transform.position = originalPosition;
+
+
         isOpening = false;
         visibleFloor.SetActive(true);
         foreach (var trap in traps)

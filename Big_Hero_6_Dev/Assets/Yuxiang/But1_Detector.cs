@@ -7,12 +7,14 @@ public class But1_Detector : MonoBehaviour
     private bool isTouching = false; // 是否正在接触
     private float touchTime = 0.0f; // 触碰时间
     private float requiredTouchTime = 0.0f; // 需要的触碰时间，例如2秒
-    private bool hasChangedWidth = false; // 是否已改变宽度
+    private bool hasChangedHeight = false; // 是否已改变宽度
     private Vector3 originalScale; // 原始尺寸
+    private Vector3 originalPosition; // 原始位置
 
     private void Start()
     {
         originalScale = targetObject.transform.localScale; // 在开始时保存原始尺寸
+        originalPosition = targetObject.transform.position; // 在开始时保存原始位置
     }
 
 
@@ -23,7 +25,12 @@ public class But1_Detector : MonoBehaviour
         {
             Global_Button.part1_button = true; // 设置为true表示物体正在接触
             isTouching = true;
-            Debug.Log("Object has started touching with the target object.");
+            SpriteRenderer spriteRenderer = targetObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = Color.green;
+            }
+            Debug.Log("Object has stopped touching with the target object.");
         }
     }
 
@@ -32,13 +39,20 @@ public class But1_Detector : MonoBehaviour
         // 检查是否是特定的对象
         if (other.gameObject == targetObject)
         {
+            SpriteRenderer spriteRenderer = targetObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = Color.red;
+            }
+
             Global_Button.part1_button = false; // 设置为false表示物体不再接触
             isTouching = false;
-            if (hasChangedWidth)
+            if (hasChangedHeight)
             {
                 targetObject.transform.localScale = originalScale; // 还原原始尺寸
-                hasChangedWidth = false; // 重置宽度改变标志
-                Debug.Log("Target object width has been restored.");
+                targetObject.transform.position = originalPosition; // 还原原始位置
+                hasChangedHeight = false; // 重置高度改变标志
+                Debug.Log("Target object height has been restored.");
             }
             Debug.Log("Object has stopped touching with the target object.");
         }
@@ -51,13 +65,24 @@ public class But1_Detector : MonoBehaviour
             touchTime += Time.deltaTime; // 累加触碰时间
 
             // 检查是否达到了改变宽度的条件
-            if (touchTime >= requiredTouchTime && !hasChangedWidth)
+            // 检查是否达到了改变高度的条件
+            if (touchTime >= requiredTouchTime && !hasChangedHeight)
             {
-                hasChangedWidth = true; // 标记为已改变宽度
+                hasChangedHeight = true; // 标记为已改变高度
                 Vector3 scale = targetObject.transform.localScale;
-                scale.x *= 0.5f; // 减少50%的宽度
+                Vector3 position = targetObject.transform.position;
+
+                float originalHeight = originalScale.y; // 使用保存的原始高度
+                float heightReduction = 0.2f; // 高度减少的百分比（减少80%）
+                float newHeight = originalHeight * heightReduction; // 计算新的高度
+
+                scale.y = newHeight; // 更新高度
+                position.y -= (originalHeight - newHeight) / 2; // 向上移动以保持底部位置不变
+
                 targetObject.transform.localScale = scale;
-                Debug.Log("Target object width has been reduced.");
+                targetObject.transform.position = position;
+
+                Debug.Log("Target object height has been reduced from the top.");
             }
         }
     }

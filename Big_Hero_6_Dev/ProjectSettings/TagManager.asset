@@ -14,6 +14,9 @@ TagManager:
   - Thorn Level2
   - KeyCount
   - Floor1
+  - Trap_button_1
+  - Trap_button_2
+  - Trap_button_3
   layers:
   - Default
   - TransparentFX

@@ -24,6 +24,11 @@ public class But2_Detector : MonoBehaviour
         {
             Global_Button.part2_button = true; // 设置为true表示物体正在接触
             isTouching = true;
+            SpriteRenderer spriteRenderer = targetObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = Color.green;
+            }
             Debug.Log("Object has stopped touching with the target object.");
         }
     }
@@ -33,6 +38,12 @@ public class But2_Detector : MonoBehaviour
         // 检查是否是特定的对象
         if (other.gameObject == targetObject)
         {
+            SpriteRenderer spriteRenderer = targetObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = Color.red;
+            }
+
             Global_Button.part2_button = false; // 设置为false表示物体不再接触
             isTouching = false;
             if (hasChangedHeight)
