@@ -4097,7 +4097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 257399260}
-  smoothSpeed: 0.125
+  smoothSpeed: 1
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &543369690
 GameObject:
@@ -5246,8 +5246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0514e6d4836ce4afe86e29f3ea619d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 200
-  reverseInterval: 6
+  rotationSpeed: 300
+  reverseInterval: 10
 --- !u!1 &671188644
 GameObject:
   m_ObjectHideFlags: 0
@@ -10757,8 +10757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa28395ca762f407480d909c53fa41a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 200
-  reverseInterval: 6
+  rotationSpeed: 300
+  reverseInterval: 10
 --- !u!4 &1600434485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2462005665941197113, guid: cc5d4449fa21d408681e56e25fcab8da, type: 3}
