@@ -43,7 +43,7 @@ public class RedKey : MonoBehaviour
             //    }
 
             //}
-            foreach (GameObject gel in gels)
+            /*foreach (GameObject gel in gels)
             {
                 if (gel != null)
                 {
@@ -51,7 +51,7 @@ public class RedKey : MonoBehaviour
                     Debug.Log("Gel has been destroyed!");
                 }
 
-            }
+            }*/
             
             foreach(GameObject key in keys)
             {
