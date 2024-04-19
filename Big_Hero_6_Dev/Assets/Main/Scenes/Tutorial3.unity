@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333.96002, y: 969.16}
+  m_AnchoredPosition: {x: 380, y: 1024}
   m_SizeDelta: {x: 898, y: 310}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36819329
@@ -308,7 +308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250.224, y: 975.7709}
+  m_AnchoredPosition: {x: 299, y: 1034}
   m_SizeDelta: {x: 634, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147827128
@@ -1022,8 +1022,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2051,7 +2051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.3, y: 233.1}
+  m_AnchoredPosition: {x: -252.3, y: 230.9376}
   m_SizeDelta: {x: 160, y: 19.4421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745160697
@@ -2247,7 +2247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1999512, y: -105.899994}
+  m_AnchoredPosition: {x: 17, y: -144}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &789763666
@@ -3007,11 +3007,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -400.4073
+      value: -381
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -223.1803
+      value: -125.99999
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3982,7 +3982,7 @@ Transform:
   m_GameObject: {fileID: 1686484518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -405.8242, y: -117.9566, z: 0}
+  m_LocalPosition: {x: -388.8242, y: -117.9566, z: 0}
   m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4534,7 +4534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can use it to extend your shadow interval!
+  m_text: You can use it to extend your Shadow Delay!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5250,7 +5250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478.5, y: 844.6}
+  m_AnchoredPosition: {x: 478.5, y: 840}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127905109
@@ -5316,8 +5316,8 @@ Transform:
   m_GameObject: {fileID: 2136593225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -403.15, y: -223.81665, z: 0.10547038}
-  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
+  m_LocalPosition: {x: -403.15, y: -211.81665, z: 0.10547038}
+  m_LocalScale: {x: 0.337, y: 0.337, z: 0.337}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 36819328}

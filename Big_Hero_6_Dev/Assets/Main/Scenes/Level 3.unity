@@ -3321,11 +3321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -407.9
+      value: -399.3
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -251.1
+      value: -146.4
       objectReference: {fileID: 0}
     - target: {fileID: 7975482664386503016, guid: 8395780c905b7be4cbe03f29d318ec00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7071,8 +7071,8 @@ Transform:
   m_GameObject: {fileID: 878541808}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -403.15, y: -223.81665, z: 0.10547038}
-  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
+  m_LocalPosition: {x: -393.9, y: -181.3, z: 0.10547038}
+  m_LocalScale: {x: 0.337, y: 0.337, z: 0.337}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1748760033}
@@ -8166,8 +8166,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9345,7 +9345,7 @@ Transform:
   m_GameObject: {fileID: 1362083002}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -405.8242, y: -117.9566, z: 0}
+  m_LocalPosition: {x: -389.52423, y: -120.856606, z: 0}
   m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9524,7 +9524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.3, y: 233.1}
+  m_AnchoredPosition: {x: -253, y: 230.2}
   m_SizeDelta: {x: 160, y: 19.4421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1369594900
@@ -13558,7 +13558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1999512, y: -105.899994}
+  m_AnchoredPosition: {x: 6, y: -129}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2012774671
