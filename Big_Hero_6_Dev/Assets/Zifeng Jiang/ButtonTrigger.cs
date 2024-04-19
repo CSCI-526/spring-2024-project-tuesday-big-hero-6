@@ -27,7 +27,3 @@ public class ButtonTrigger : MonoBehaviour
         }
     }
 }
-
-
-
-
