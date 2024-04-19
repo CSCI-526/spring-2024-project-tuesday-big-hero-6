@@ -1292,7 +1292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7670865985302118123, guid: 8b3a32924b2af4e768287106bcacc8d0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.123073116
+      value: 0.111935
       objectReference: {fileID: 0}
     - target: {fileID: 7670865985302118123, guid: 8b3a32924b2af4e768287106bcacc8d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1300,7 +1300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7670865985302118123, guid: 8b3a32924b2af4e768287106bcacc8d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.6758995
+      value: -4.6703
       objectReference: {fileID: 0}
     - target: {fileID: 7670865985302118123, guid: 8b3a32924b2af4e768287106bcacc8d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1564,7 +1564,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5176471}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Transparent platforms will disappear at some point!
+  m_text: Grey platforms will disappear at some point!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6839,7 +6839,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_Color: {r: 0.5018867, g: 0.5018867, b: 0.5018867, a: 0.5176471}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
