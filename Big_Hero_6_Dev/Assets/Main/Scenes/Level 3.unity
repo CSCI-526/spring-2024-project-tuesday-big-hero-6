@@ -1647,7 +1647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5913503024129750032, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
       propertyPath: m_text
-      value: Be careful with Arrows downstairs!
+      value: You can use your special ability to avoid Arrows below!
       objectReference: {fileID: 0}
     - target: {fileID: 5913503024129750032, guid: 0d1a36ccd41e947daacf94e2aecccb17, type: 3}
       propertyPath: m_fontSize
