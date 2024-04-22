@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow_speed: -8
-  arrow_lifetime: 2
+  arrow_lifetime: 1
 --- !u!1 &4804298621937701038
 GameObject:
   m_ObjectHideFlags: 0
